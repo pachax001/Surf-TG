@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    command: bash surf-tg.sh
+    restart: on-failure
+    ports:
+      - "80:80"
